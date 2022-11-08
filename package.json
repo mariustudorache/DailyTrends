@@ -4,6 +4,7 @@
   "description": "news pages scrapper",
   "main": "index.js",
   "scripts": {
+    "dev:ddd": "nodemon ./src/feed/feed.app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
