@@ -8,7 +8,6 @@ import FeedModel from "../model/feed.schema";
 export class MongoRepository implements FeedRepository {
   async findFeedById(uuid: string): Promise<any> {
     try {
-      Logger.debug("get news by id");
       return await FeedModel.findOne({ uuid });
     } catch (error) {
       Logger.error(error);
@@ -16,8 +15,6 @@ export class MongoRepository implements FeedRepository {
   }
   async saveFeed(feedIn: FeedEntity): Promise<any> {
     try {
-      Logger.debug("save news");
-
       return await FeedModel.create(feedIn);
     } catch (error) {
       Logger.error(error);
@@ -25,10 +22,7 @@ export class MongoRepository implements FeedRepository {
   }
   async listFeeds(): Promise<any> {
     try {
-      Logger.debug("list all news");
-      return await FeedModel.find();
-      // const date = new Date().toISOString();
-      // console.log("new date = ", date);
+      return await FeedModel.find({});
     } catch (error) {
       Logger.error(error);
     }
@@ -36,8 +30,6 @@ export class MongoRepository implements FeedRepository {
 
   async listLastFeeds(): Promise<any> {
     try {
-      Logger.debug("get latest 5 news");
-
       let startDate = new Date();
       startDate.setUTCHours(0, 0, 0, 0);
       let endDate = new Date();
