@@ -1,37 +1,38 @@
-import { Request, Response } from "express";
 import Logger from "../../../core/libs/winston.logger";
 import { FeedUseCase } from "../../application/feedUseCase";
+import { MongoRepository } from "../repository/mongo.repository";
 
 export class FeedController {
-  constructor(private feedUseCase: FeedUseCase) {
+  private feedUseCase: FeedUseCase;
+  private feedRepo: MongoRepository;
+  constructor() {
+    this.feedRepo = new MongoRepository();
+    this.feedUseCase = new FeedUseCase(this.feedRepo);
     this.insertCtrl = this.insertCtrl.bind(this);
     this.getFeedDetails = this.getFeedDetails.bind(this);
     this.getLastFeeds = this.getLastFeeds.bind(this);
   }
 
-  public async getFeedDetails({ query }: Request, res: Response) {
+  public async getFeedDetails(uuid: string): Promise<any | null> {
     try {
-      const { uuid = "" } = query;
-      const feed = await this.feedUseCase.getFeedDetail(`${uuid}`);
-      res.send({ feed });
+      return await this.feedUseCase.getFeedDetail(uuid);
     } catch (error) {
       Logger.error(`FeedController ${error}`);
     }
   }
 
-  public async getLastFeeds(req: Request, res: Response) {
+  public async getLastFeeds(): Promise<Array<any>> {
     try {
-      const feeds = await this.feedUseCase.getLastFeeds();
-      res.send({ feeds });
+      return await this.feedUseCase.getLastFeeds();
+      // res.send({ feeds });
     } catch (error) {
       Logger.error(`FeedController ${error}`);
     }
   }
 
-  public async insertCtrl({ body }: Request, res: Response) {
+  public async insertCtrl(body: any): Promise<any> {
     try {
-      const feed = await this.feedUseCase.saveFeed(body);
-      res.send({ feed });
+      return await this.feedUseCase.saveFeed(body);
     } catch (error) {
       Logger.error(`FeedController ${error}`);
     }

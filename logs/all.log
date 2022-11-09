@@ -6,3 +6,31 @@
 2022-11-08 09:04:38:438 [37mdebug[39m: [37mServer is up and running @ http://localhost:3001[39m
 2022-11-08 09:06:04:64 [37mdebug[39m: [37mstart a new cron job[39m
 2022-11-08 09:06:04:64 [37mdebug[39m: [37mServer is up and running @ http://localhost:3001[39m
+2022-11-09 05:07:54:754 [37mdebug[39m: [37mstart a new cron job[39m
+2022-11-09 05:07:54:754 [37mdebug[39m: [37mServer is up and running @ http://localhost:3001[39m
+2022-11-09 05:09:56:956 [37mdebug[39m: [37mstart a new cron job[39m
+2022-11-09 05:09:56:956 [37mdebug[39m: [37mServer is up and running @ http://localhost:3001[39m
+2022-11-09 05:10:00:100 [37mdebug[39m: [37mscrap news pages[39m
+2022-11-09 05:12:45:1245 [37mdebug[39m: [37mstart a new cron job[39m
+2022-11-09 05:12:45:1245 [37mdebug[39m: [37mServer is up and running @ http://localhost:3001[39m
+2022-11-09 05:14:59:1459 [37mdebug[39m: [37mstart a new cron job[39m
+2022-11-09 05:14:59:1459 [37mdebug[39m: [37mServer is up and running @ http://localhost:3001[39m
+2022-11-09 05:15:07:157 [31merror[39m: [31mFeedController Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client[39m
+2022-11-09 05:15:39:1539 [37mdebug[39m: [37mstart a new cron job[39m
+2022-11-09 05:15:39:1539 [37mdebug[39m: [37mServer is up and running @ http://localhost:3001[39m
+2022-11-09 05:18:17:1817 [37mdebug[39m: [37mstart a new cron job[39m
+2022-11-09 05:18:17:1817 [37mdebug[39m: [37mServer is up and running @ http://localhost:3001[39m
+2022-11-09 05:19:07:197 [37mdebug[39m: [37mstart a new cron job[39m
+2022-11-09 05:19:07:197 [37mdebug[39m: [37mServer is up and running @ http://localhost:3001[39m
+2022-11-09 05:20:00:200 [37mdebug[39m: [37mscrap news pages[39m
+2022-11-09 05:24:31:2431 [37mdebug[39m: [37mstart a new cron job[39m
+2022-11-09 05:24:31:2431 [37mdebug[39m: [37mServer is up and running @ http://localhost:3001[39m
+2022-11-09 05:25:31:2531 [37mdebug[39m: [37mstart a new cron job[39m
+2022-11-09 05:25:31:2531 [37mdebug[39m: [37mServer is up and running @ http://localhost:3001[39m
+2022-11-09 05:26:39:2639 [37mdebug[39m: [37mstart a new cron job[39m
+2022-11-09 05:26:39:2639 [37mdebug[39m: [37mServer is up and running @ http://localhost:3001[39m
+2022-11-09 05:30:00:300 [37mdebug[39m: [37mscrap news pages[39m
+2022-11-09 05:31:28:3128 [37mdebug[39m: [37mstart a new cron job[39m
+2022-11-09 05:31:28:3128 [37mdebug[39m: [37mServer is up and running @ http://localhost:3001[39m
+2022-11-09 05:33:23:3323 [37mdebug[39m: [37mstart a new cron job[39m
+2022-11-09 05:33:23:3323 [37mdebug[39m: [37mServer is up and running @ http://localhost:3001[39m
